@@ -4,4 +4,6 @@
 
 ## Solutions
 
+* Day 1:  :santa:
+    * [Rust](Day1-9/day1_rs)
 
