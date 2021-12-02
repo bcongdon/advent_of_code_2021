@@ -5,5 +5,6 @@
 ## Solutions
 
 * Day 1:  :santa:
+    * [Python](Day1-9/1.py)
     * [Rust](Day1-9/day1_rs)
 
