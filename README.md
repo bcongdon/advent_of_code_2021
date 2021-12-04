@@ -9,4 +9,6 @@
     * [Rust](Day1-9/day1_rs)
 * Day 2:  :star2:
     * [Rust](Day1-9/day2_rs)
+* Day 3:  :snowflake:
+    * [Rust](Day1-9/day3_rs)
 
