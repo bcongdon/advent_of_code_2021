@@ -23,4 +23,6 @@
 * Day 9:  :bell:
     * [Python](Day1-9/9.py)
     * [Rust](Day1-9/day9_rs)
+* Day 10:  :tada:
+    * [Rust](Day10-19/day10_rs)
 
