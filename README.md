@@ -27,4 +27,7 @@
     * [Rust](Day1-9/day9_rs)
 * Day 10:  :tada:
     * [Rust](Day10-19/day10_rs)
+* Day 11:  :santa:
+    * [Python](Day10-19/11.py)
+    * [Rust](Day10-19/day11_rs)
 
