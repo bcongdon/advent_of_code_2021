@@ -1,5 +1,5 @@
-# advent_of_code_2021
-🎅 My solutions to the 2021 "Advent of Code"
+# advent_of_code_2020
+🎅 My solutions to the 2020 "Advent of Code"
 
 
 ## Solutions
@@ -39,4 +39,7 @@
 * Day 14:  :snowman:
     * [Python](Day10-19/14.py)
     * [Rust](Day10-19/day14_rs)
+* Day 15:  :sparkles:
+    * [Python](Day10-19/15.py)
+    * [Rust](Day10-19/day15_rs)
 
