@@ -36,4 +36,6 @@
 * Day 13:  :snowflake:
     * [Python](Day10-19/13.py)
     * [Rust](Day10-19/day13_rs)
+* Day 14:  :snowman:
+    * [Python](Day10-19/14.py)
 
