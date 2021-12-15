@@ -31,6 +31,7 @@ if __name__ == '__main__':
             char_counts[b] = (char_counts[b][0], char_counts[b][1] + count)
         char_counts = [max(cnt) for cnt in char_counts.values()]
         diff = max(char_counts) - min(char_counts)
+        print(idx, diff)
         if idx+1 == 10:
             print("Part 1: {}".format(diff))
         elif idx+1 == 40:

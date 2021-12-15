@@ -38,4 +38,5 @@
     * [Rust](Day10-19/day13_rs)
 * Day 14:  :snowman:
     * [Python](Day10-19/14.py)
+    * [Rust](Day10-19/day14_rs)
 
