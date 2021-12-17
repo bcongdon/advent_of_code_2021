@@ -42,4 +42,6 @@
 * Day 15:  :sparkles:
     * [Python](Day10-19/15.py)
     * [Rust](Day10-19/day15_rs)
+* Day 16:  :fire:
+    * [Rust](Day10-19/day16_rs)
 
