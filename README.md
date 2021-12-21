@@ -49,4 +49,6 @@
     * [Rust](Day10-19/day17_rs)
 * Day 19:  :bell:
     * [Rust](Day10-19/day19_rs)
+* Day 20:  :tada:
+    * [Rust](Day20-25/day20_rs)
 
