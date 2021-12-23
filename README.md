@@ -53,4 +53,6 @@
     * [Rust](Day20-25/day20_rs)
 * Day 21:  :santa:
     * [Python](Day20-25/21.py)
+* Day 22:  :star2:
+    * [Python](Day20-25/22.py)
 
