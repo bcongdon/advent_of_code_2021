@@ -4,7 +4,7 @@ fn parse_line(line: &str) -> (char, char, char) {
     let mut pieces = line.split(" -> ");
     let input = pieces.next().unwrap();
     let output = pieces.next().unwrap();
-    let (a, b) = (input.chars().nth(0).unwrap(), input.chars().nth(1).unwrap());
+    let (a, b) = (input.chars().next().unwrap(), input.chars().nth(1).unwrap());
     let c = output.chars().next().unwrap();
     (a, b, c)
 }
