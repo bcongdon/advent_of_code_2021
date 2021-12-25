@@ -12,7 +12,7 @@ fn iterate_fish(counters: &mut [usize; MAX_COUNTER + 1]) {
 }
 
 fn total_fish(starting: &[usize; MAX_COUNTER + 1], num_days: usize) -> usize {
-    let mut counters = starting.clone();
+    let mut counters = *starting;
     for _ in 0..num_days {
         iterate_fish(&mut counters);
     }

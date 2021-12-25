@@ -18,7 +18,7 @@ impl FromStr for Instruction {
     type Err = eyre::Error;
 
     fn from_str(s: &str) -> eyre::Result<Instruction> {
-        let mut pieces = s.splitn(2, " ");
+        let mut pieces = s.splitn(2, ' ');
         let direction = match pieces.next() {
             Some("forward") => Ok(Direction::Forward),
             Some("down") => Ok(Direction::Down),

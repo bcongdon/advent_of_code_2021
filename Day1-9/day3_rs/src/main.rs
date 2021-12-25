@@ -7,9 +7,9 @@ fn main() {
     let ones = ones_frequencies(&lines);
     let mut gamma = 0;
     let mut epsilon = 0;
-    for i in 0..binary_len {
+    for (i, val) in ones.iter().enumerate().take(binary_len) {
         let pow = 2_i32.pow((binary_len - i - 1) as u32);
-        if ones[i] > lines.len() / 2 {
+        if *val > lines.len() / 2 {
             gamma += pow;
         } else {
             epsilon += pow;
@@ -67,7 +67,7 @@ fn ones_frequencies(nums: &[&str]) -> Vec<usize> {
             }
         }
     }
-    return ones;
+    ones
 }
 
 fn most_common_binary_digit(nums: &[&str], idx: usize) -> Option<usize> {
