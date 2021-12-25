@@ -24,7 +24,7 @@ fn hallway_dist(room_idx: usize, hallway_idx: usize) -> u64 {
     } else {
         hallway_idx
     };
-    return ((hallway_pos as i64) - (exit_pos as i64)).abs() as u64;
+    ((hallway_pos as i64) - (exit_pos as i64)).abs() as u64
 }
 
 #[derive(Hash, Debug, Clone, PartialEq, Eq, PartialOrd, Ord)]
@@ -67,7 +67,7 @@ impl State {
         for room_idx in 0..NUM_ROOMS {
             let room_complete = self.rooms[room_idx]
                 .iter()
-                .all(|&c| (c as u8 - 'a' as u8) == room_idx as u8);
+                .all(|&c| (c as u8 - b'a') == room_idx as u8);
             if room_complete {
                 continue;
             }
@@ -113,10 +113,10 @@ impl State {
             if moving_amphipod == '.' {
                 continue;
             }
-            let dest_room_idx = (moving_amphipod as u8 - 'a' as u8) as usize;
+            let dest_room_idx = (moving_amphipod as u8 - b'a') as usize;
             let room_needs_moveout = self.rooms[dest_room_idx]
                 .iter()
-                .any(|&c| (c as u8 - 'a' as u8) != dest_room_idx as u8);
+                .any(|&c| (c as u8 - b'a') != dest_room_idx as u8);
             if room_needs_moveout {
                 continue;
             }
