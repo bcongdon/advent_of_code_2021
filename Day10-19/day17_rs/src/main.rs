@@ -14,9 +14,7 @@ fn check_if_lands_in_target(
         x += vx;
         y += vy;
         max_y = max_y.max(y);
-        if vx > 0 {
-            vx -= 1;
-        } else if vx < 0 {
+        if vx != 0 {
             vx -= 1;
         }
         vy -= 1;
@@ -29,10 +27,7 @@ fn main() {
     let target_y = (-260, -200);
 
     let (mut part1, mut part2) = (i32::MIN, 0);
-    for (vx, vy) in iproduct![
-        (0..=target_x.1).into_iter(),
-        (target_y.0..-target_y.0).into_iter()
-    ] {
+    for (vx, vy) in iproduct![(0..=target_x.1), (target_y.0..-target_y.0)] {
         if let (true, max_y) = check_if_lands_in_target(vx, vy, target_x, target_y) {
             part1 = part1.max(max_y);
             part2 += 1;
