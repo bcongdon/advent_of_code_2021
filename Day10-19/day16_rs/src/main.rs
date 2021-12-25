@@ -22,14 +22,14 @@ enum Operator {
 impl Operator {
     fn apply(&self, values: &[u128]) -> u128 {
         let bool_to_value = |pred| if pred { 1 } else { 0 };
-        match self {
-            &Operator::Sum => values.iter().sum(),
-            &Operator::Product => values.iter().product(),
-            &Operator::Maximum => values.iter().max().cloned().unwrap(),
-            &Operator::Minimum => values.iter().min().cloned().unwrap(),
-            &Operator::LessThan => bool_to_value(values[0] < values[1]),
-            &Operator::GreaterThan => bool_to_value(values[0] > values[1]),
-            &Operator::EqualTo => bool_to_value(values[0] == values[1]),
+        match *self {
+            Operator::Sum => values.iter().sum(),
+            Operator::Product => values.iter().product(),
+            Operator::Maximum => values.iter().max().cloned().unwrap(),
+            Operator::Minimum => values.iter().min().cloned().unwrap(),
+            Operator::LessThan => bool_to_value(values[0] < values[1]),
+            Operator::GreaterThan => bool_to_value(values[0] > values[1]),
+            Operator::EqualTo => bool_to_value(values[0] == values[1]),
         }
     }
 }
